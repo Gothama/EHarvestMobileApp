@@ -21,13 +21,13 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = (EditText) findViewById(R.id.username);
-        telephone = (EditText) findViewById(R.id.telephoneNumber);
-        password = (EditText) findViewById(R.id.password);
-        name = (EditText) findViewById(R.id.username);
+        username = (EditText) findViewById(R.id.description);
+        telephone = (EditText) findViewById(R.id.address);
+        password = (EditText) findViewById(R.id.telephonenum);
+        name = (EditText) findViewById(R.id.description);
         loadingBar = new ProgressDialog(this);
 
-        makeAccount = (Button)findViewById(R.id.signin);
+        makeAccount = (Button)findViewById(R.id.createAdd);
         user = new User(this, "", null,1);
         makeAccount.setOnClickListener(new View.OnClickListener() {
             @Override

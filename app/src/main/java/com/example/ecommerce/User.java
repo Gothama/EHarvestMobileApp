@@ -2,6 +2,7 @@ package com.example.ecommerce;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -76,5 +77,20 @@ public class User extends SQLiteOpenHelper {
             int rec = db.rawQuery(sql, null).getCount();
             db.close();
             return rec;
+    }
+
+    public String[] getMyDetails(String username){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "SELECT * FROM USER WHERE USERNAME = '" + username + "'";
+        Cursor result = db.rawQuery(sql, null);
+        result.moveToFirst();
+        String array[] = {result.getString(0), result.getString(1), result.getString(2)};
+        return array;
+
+    }
+    public void updateDetails(String username, String password , String telephoneNum){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String strSQL = "UPDATE USER SET PASSWORD = '" + password + "'AND TELEPHONENUM = '" + telephoneNum + "' WHERE USERNAME = '"+ username + "'";
+        db.execSQL(strSQL);
     }
 }

@@ -11,7 +11,7 @@
         android:id="@+id/login_app_logo"
         android:layout_width="327dp"
         android:layout_height="260dp"
-        android:layout_above="@+id/username"
+        android:layout_above="@+id/description"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -26,7 +26,7 @@
         android:src="@drawable/ecommerce" />
 
     <Button
-        android:id="@+id/signin"
+        android:id="@+id/createAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -48,10 +48,10 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/description"
         android:layout_width="297dp"
         android:layout_height="58dp"
-        android:layout_above="@+id/password"
+        android:layout_above="@+id/telephonenum"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -71,10 +71,10 @@
         android:textColorHint="@color/slogancolor" />
 
     <EditText
-        android:id="@+id/telephoneNumber"
+        android:id="@+id/address"
         android:layout_width="305dp"
         android:layout_height="46dp"
-        android:layout_above="@+id/password"
+        android:layout_above="@+id/telephonenum"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -94,10 +94,10 @@
         android:textColorHint="@color/slogancolor" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/telephonenum"
         android:layout_width="305dp"
         android:layout_height="46dp"
-        android:layout_above="@+id/signin"
+        android:layout_above="@+id/createAdd"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -116,10 +116,10 @@
         android:textColorHint="@android:color/background_light" />
 
     <EditText
-        android:id="@+id/password2"
+        android:id="@+id/type"
         android:layout_width="305dp"
         android:layout_height="46dp"
-        android:layout_above="@+id/password"
+        android:layout_above="@+id/telephonenum"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"

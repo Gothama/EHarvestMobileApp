@@ -19,9 +19,9 @@ public class signin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        signIn = (Button)findViewById(R.id.signin);
+        username = (EditText) findViewById(R.id.description);
+        password = (EditText) findViewById(R.id.telephonenum);
+        signIn = (Button)findViewById(R.id.createAdd);
         user = new User(this, "", null,1);
 
         signIn.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +62,7 @@ public class signin extends AppCompatActivity {
                 if(k == 1){
                    Toast.makeText(this, "Login Successfull", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(signin.this , Dashboard.class);
+                    intent.putExtra("USERNAME", name);
                     startActivity(intent);
                 }
                 else{
