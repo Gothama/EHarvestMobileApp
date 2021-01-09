@@ -34,10 +34,7 @@ public class Dashboard extends AppCompatActivity {
         Intent intent = new Intent(Dashboard.this , Settings.class);
         startActivity(intent);
     }
-    public void Notifications(View view) {
-        Intent intent = new Intent(Dashboard.this , Notifications.class);
-        startActivity(intent);
-    }
+
     public void MyAdds(View view) {
         Intent intent = new Intent(Dashboard.this , MyAdds.class);
         intent.putExtra("USERNAME",message);

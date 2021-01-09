@@ -8,12 +8,14 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class AddAdvertisement extends AppCompatActivity {
 
     private EditText heading, address, description, telephoneNum, type;
     private Button create;
+    private ImageButton location;
     private Advertisement advertisement;
     private String message;
 
@@ -29,6 +31,7 @@ public class AddAdvertisement extends AppCompatActivity {
         description = (EditText)findViewById(R.id.description);
         telephoneNum = (EditText)findViewById(R.id.telephonenum);
         type = (EditText)findViewById(R.id.type);
+        location = (ImageButton)findViewById(R.id.addlocation);
         create = (Button)findViewById(R.id.createAdd);
         advertisement = new Advertisement(this, "", null,1);
         create.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +40,19 @@ public class AddAdvertisement extends AppCompatActivity {
                 createAdd();
             }
         });
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getLocation();
+            }
+        });
     }
+
+    private void getLocation() {
+
+
+    }
+
     public void createAdd(){
         String heading1 = heading.getText().toString();
         String address1 = address.getText().toString();

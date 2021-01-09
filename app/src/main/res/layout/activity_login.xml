@@ -11,7 +11,7 @@
         android:id="@+id/login_app_logo"
         android:layout_width="327dp"
         android:layout_height="260dp"
-        android:layout_above="@+id/description"
+        android:layout_above="@+id/username"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -29,7 +29,6 @@
         android:id="@+id/createAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
@@ -48,10 +47,10 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/description"
+        android:id="@+id/username"
         android:layout_width="297dp"
         android:layout_height="58dp"
-        android:layout_above="@+id/telephonenum"
+        android:layout_above="@+id/password1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -70,31 +69,10 @@
         android:textColorHighlight="@color/slogancolor"
         android:textColorHint="@color/slogancolor" />
 
-    <EditText
-        android:id="@+id/address"
-        android:layout_width="305dp"
-        android:layout_height="46dp"
-        android:layout_above="@+id/telephonenum"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="57dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginBottom="-185dp"
-        android:background="@drawable/inputs_design"
-        android:ems="10"
-        android:hint="@string/telephone"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:textColor="@android:color/white"
-        android:textColorHighlight="@color/slogancolor"
-        android:textColorHint="@color/slogancolor" />
+
 
     <EditText
-        android:id="@+id/telephonenum"
+        android:id="@+id/password1"
         android:layout_width="305dp"
         android:layout_height="46dp"
         android:layout_above="@+id/createAdd"
@@ -116,10 +94,10 @@
         android:textColorHint="@android:color/background_light" />
 
     <EditText
-        android:id="@+id/type"
+        android:id="@+id/uname"
         android:layout_width="305dp"
         android:layout_height="46dp"
-        android:layout_above="@+id/telephonenum"
+        android:layout_above="@+id/password1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -131,13 +109,34 @@
         android:layout_marginBottom="-113dp"
         android:background="@drawable/inputs_design"
         android:ems="10"
-        android:hint="@string/confirmpassword"
-        android:inputType="textPassword"
+        android:hint="Name"
         android:paddingLeft="10dp"
         android:textColor="@android:color/white"
         android:textColorHighlight="@color/slogancolor"
         android:textColorHint="@color/slogancolor" />
 
+    <EditText
+        android:id="@+id/telephonenum"
+        android:layout_width="305dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/password1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="-185dp"
+        android:background="@drawable/inputs_design"
+        android:ems="10"
+        android:hint="@string/telephone"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/slogancolor"
+        android:textColorHint="@color/slogancolor" />
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"

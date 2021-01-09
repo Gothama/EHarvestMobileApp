@@ -32,7 +32,7 @@
         android:textSize="18sp" />
 
     <ImageButton
-        android:id="@+id/addimage"
+        android:id="@+id/addlocation"
         android:layout_width="83dp"
         android:layout_height="72dp"
         android:layout_above="@+id/heading"

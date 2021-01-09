@@ -12,8 +12,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".productDisplay"></activity>
         <activity android:name=".MyAdds" />
-        <activity android:name=".Notifications" />
-        <activity android:name=".Settings" />
         <activity android:name=".MyAccount" />
         <activity android:name=".AddAdvertisement" />
         <activity android:name=".AllAdvertisements" />
@@ -28,5 +26,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
